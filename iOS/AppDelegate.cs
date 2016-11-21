@@ -5,6 +5,8 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
+using Microsoft.Azure.Mobile;
+
 namespace mctest.iOS
 {
 	[Register("AppDelegate")]
@@ -12,6 +14,8 @@ namespace mctest.iOS
 	{
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
+			MobileCenter.Configure("d3b71711-7410-4ec2-afea-5b6a9bdf9f6a");
+			
 			global::Xamarin.Forms.Forms.Init();
 
 			// Code for starting up the Xamarin Test Cloud Agent
